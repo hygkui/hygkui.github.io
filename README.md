@@ -1,4 +1,4 @@
-# Pixyll
+# Pixyll 中文版
 
 [pixyll.com](http://www.pixyll.com)
 
