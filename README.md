@@ -1,23 +1,23 @@
 # Pixyll 中文版
+## 中文版说明
+这是pixyll的汉化版，主要改动如下:
 
-[pixyll.com](http://www.pixyll.com)
+1. 语言汉化
+2. 加入**多说**评论功能
+3. 加入**百度统计**(可用google统计和百度统计)
+4. fonts.googleapis.com更改为360字体cdn，大幅增加国内访问速度
+
+原版:[pixyll.com](http://www.pixyll.com)
 
 ![Pixyll screenshot](https://cloud.githubusercontent.com/assets/1424573/3847467/134aa236-1e66-11e4-8421-4e8c122118dc.png)
 
-Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
+## 使用说明 
 
-It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
+要使用Pixyll，你需要先安装ruby和jekyll
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+### 安装 Jekyll
 
-## Getting Started
-
-If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
-
-### Installing Jekyll
-
-If you don't have Jekyll already installed, you will need to go ahead and do that.
+你可以使用gem安装Jekyll，若已安装Jeykll，请跳过此步
 
 ```
 $ gem install jekyll
@@ -25,130 +25,62 @@ $ gem install jekyll
 
 #### Verify your Jekyll version
 
-It's important to also check your version of Jekyll since this project uses Native Sass which
-is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+确认你的Jekyll版本，因为Pixyll只支持 [Jekyll 2.0 以上版本](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
 
 ```
 $ jekyll -v
 # This should be jekyll 2.0.0 or later
 ```
 
-### Fork, then clone
+### 下载源码
 
-Fork the repo, and then clone it so you've got the code locally.
+fork 和 clone本repo
 
-### Modify the _config.yml
+### 修改配置文件: _config.yml
 
-The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
-for the Jekyll site. The defaults are:
+编辑配置文件 `_config.yml` :
 
 ```yml
 # Site settings
-title: Pixyll
-email: your_email@example.com
+title: 网站标题
+email: 您的邮箱 
 author: John Otander
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl: ""
-url: "http://pixyll.com"
+url: "网站url，如:http://pixyll.com"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+#每页文章数量
 paginate: 3
 ```
 
-### Jekyll Serve
+### 多说评论和百度统计(可选)
+配置多说，和百度统计，如果不需要评论和统计功能，你可以跳过此步
+你需要先注册多说和百度统计账号，然后将相应id填入配置文件即可
+特别注意，百度统计请使用异步js代码
+![百度统计](https://raw.githubusercontent.com/ee0703/pixyll-zh-cn/master/images/bdtjcfg.jpg)
 
-Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
+``` yml
+#Duoshuo short Name / 多说的shortname
+duoshuo: 在这里填入你的多说short name
 
+#Baidu analytics / 百度统计(异步的js码，注意使用异步版本的)
+baidu_analyze: 百度统计码，如：3908cbb144cf558ba6a823230d653fc22 
+```
+
+
+### 运行服务器 Jekyll Serve
+
+运行Jekyll服务器
 ```
 $ jekyll serve --watch
 ```
 
-Now you can navigate to `localhost:4000` in your browser to see the site.
+用浏览器打开 `localhost:4000`就可以看到网站了.
 
-### Using Github Pages
+### 使用 Github Pages
 
-You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
+关于如何使用Github pages来host你的网站,可以参考[这里](https://pages.github.com/)
 
-#### A configuration tweak if you're using a gh-pages sub-folder
-
-In addition to your github-username.github.io repo that maps to the root url, you can serve up sites by using a gh-pages branch for other repos so they're available at github-username.github.io/repo-name.
-
-This will require you to modify the `_config.yml` like so:
-
-```yml
-# Site settings
-title: Repo Name
-email: your_email@example.com
-author: John Otander
-description: "Repo description"
-baseurl: "/repo-name"
-url: "http://github-username.github.io"
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 3
-```
-
-This will ensure that the the correct relative path is constructed for your assets and posts. Also, in order to run the project locally, you will need to specify the blank string for the baseurl: `$ jekyll serve --baseurl ''`.
-
-##### If you don't want the header to link back to the root url
-
-You will also need to tweak the header include `/{{ site.baseurl }}`:
-
-```html
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}/{{ site.baseurl }}">{{ site.title }}</a>
-      <nav class="site-nav right">
-        {% include navigation.html %}
-      </nav>
-    </div>
-  </div>
-</header>
-```
-
-A relevant Jekyll Github Issue: <https://github.com/jekyll/jekyll/issues/332>
-
-### Contact Form
-
-If you'd like to keep the contact form, which uses <http://forms.brace.io/>, you will need to update the email address.
-
-Currently, the `contact.md` has the following:
-
-```html
-<form action="https://forms.brace.io/johnotander@icloud.com" method="POST" class="form-stacked form-light">
-```
-
-Where it says `johnotander@icloud.com`, you will need to change that to the email that you wish to have the form data sent to. It will require you to fill the form out when you push it live for the first time so that you can confirm your email.
-
-### Page Animation
-
-If you would like to add a [fade-in-down effect](http://daneden.github.io/animate.css/), you can add `animated: true` to your `_config.yml`.
-
-### Put in a Pixyll Plug
-
-If you want to give credit to the Pixyll theme with a link to <http://pixyll.com> or my personal website <http://johnotander.com> somewhere, that'd be awesome. No worries if you don't.
-
-### Enjoy
-
-I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-## Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
-* [Animate.css](http://daneden.github.io/animate.css/)
