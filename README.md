@@ -23,7 +23,7 @@
 $ gem install jekyll
 ```
 
-#### Verify your Jekyll version
+#### 确认 Jekyll 版本
 
 确认你的Jekyll版本，因为Pixyll只支持 [Jekyll 2.0 以上版本](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
 
