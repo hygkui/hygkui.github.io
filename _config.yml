@@ -1,16 +1,16 @@
 # Site settings
-title:       pixell中文版 
-email:       youremail@example.com 
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       hygkui 
+email:       hygkui_at_gmail.com 
+author:      G HH
+description: "share to learn"
 baseurl:     ""
-url:         "http://pixyll.maxee.info"
+url:         "https://hygkui.github.io"
 
 #Duoshuo short Name / 多说的shortname
-duoshuo: 
+duoshuo: hygkui
 
 #Baidu analytics / 百度统计(异步的js码，注意使用异步版本的)
-baidu_analyze: 3908cbb144cf558ba6a823230d653fc22 
+baidu_analyze: 
 
 # Google analytics
 google_analytics:
@@ -21,10 +21,9 @@ show_related_posts: false
 show_post_footers:  false
 
 # Social icons
-show_social_icons: false
-github_username:
-twitter_username:
-google_plus_id:
+show_social_icons: true
+github_username: hygkui
+weibo_id: hygkui
 linkedin_username:
 bitcoin_url:
 paypal_url:
