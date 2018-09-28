@@ -1,5 +1,5 @@
 # Site settings
-title:       hygkui 
+title:       hygkui 鲜衣怒马少年时，轻舟已过万重山
 email:       hygkui_at_gmail.com 
 author:      G HH
 description: "share to learn"
@@ -32,6 +32,9 @@ flattr_button:
 # Build settings
 markdown:     kramdown
 permalink:    pretty
-paginate:     3
 sass:
   compressed: true
+
+# paginate
+plugins: [jekyll-paginate]
+paginate:     3
