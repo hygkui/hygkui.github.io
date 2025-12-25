@@ -50,7 +50,7 @@ brew install claude-code
     "glm": {
       "baseUrl": "https://open.bigmodel.cn/api/paas/v4/",
       "apiKey": "your-glm-api-key-here",
-      "model": "glm-4-plus"
+      "model": "glm-4.7"
     }
   },
   "defaultProvider": "glm"
