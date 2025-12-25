@@ -42,19 +42,18 @@ brew install claude-code
 
 首先需要在智谱 AI 获取 API Key。
 
-创建配置文件 `~/.config/claude-code/config.json`:
+创建配置文件 `~/.claude-code/settings.json`:
 
 ```json
 {
-  "providers": {
-    "glm": {
-      "baseUrl": "https://open.bigmodel.cn/api/paas/v4/",
-      "apiKey": "your-glm-api-key-here",
-      "model": "glm-4.7"
+    "env": {
+        "ANTHROPIC_AUTH_TOKEN": "your_api_key",
+        "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+        "API_TIMEOUT_MS": "3000000",
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
     }
-  },
-  "defaultProvider": "glm"
 }
+
 ```
 
 ### 3. 配置 GLM MCP 服务器
