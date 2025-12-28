@@ -3,6 +3,7 @@ layout: default
 title: 用NotebookLM整理Twitter书签：从收藏到知识体系的质变
 no_duoshuo: false
 permalink : /twitter-bookmarks-export-20251228/
+cover_image: /images/unnamed.png
 ---
 
 # 用NotebookLM整理Twitter书签：从收藏到知识体系的质变
