@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\n重构项目可行性评估报告为 Jekyll 博客文章格式\n\n- 将文件重命名为符合 Jekyll _posts 命名规范的格式\n- 添加 YAML front matter（layout, title, permalink 等）\n- 保持原有内容不变，仅调整格式以适配 github.io 博客\n- 删除原中文文件名，使用英文文件名便于部署\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

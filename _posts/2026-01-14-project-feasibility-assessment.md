@@ -2,7 +2,7 @@
 layout: default
 title: 印钞机项目可行性评估报告：诚实的自我审视
 no_duoshuo: false
-permalink: /project-feasibility-assessment-20250115/
+permalink: /project-feasibility-assessment-20260114/
 ---
 
 # 印钞机项目可行性评估报告：诚实的自我审视
