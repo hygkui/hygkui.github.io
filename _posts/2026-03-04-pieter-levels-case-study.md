@@ -7,7 +7,7 @@ permalink: /pieter-levels-case-study/
 
 # Pieter Levels 案例研究：80万粉丝的独立创业者
 
-> 更新：2026-03-04 v6
+> 更新：2026-03-04 v7
 > 从 0 到 $3M/年，solo founder 的完整复盘
 
 ## 人物背景
