@@ -4,6 +4,7 @@ title: Stack on Sea 上线：我的第一个产品发布了
 summary: 面向出海开发者的一键技术栈选择与 AI Prompt 生成工具，已在 Vercel 正式上线。
 no_duoshuo: true
 permalink: /stack-on-sea-launch/
+cover_image: /images/stack-on-sea-cover-20260318.png
 ---
 
 # Stack on Sea 上线：我的第一个产品发布了
