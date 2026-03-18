@@ -4,12 +4,13 @@ title: Stack on Sea 上线：我的第一个产品发布了
 summary: 面向出海开发者的一键技术栈选择与 AI Prompt 生成工具，已在 Vercel 正式上线。
 no_duoshuo: true
 permalink: /stack-on-sea-launch/
-cover_image: /images/stack-on-sea-cover-20260318.png
 ---
 
 # Stack on Sea 上线：我的第一个产品发布了
 
 今天正式发布了我的第一个产品：[Stack on Sea](https://stack-on-sea.vercel.app/)。
+
+![Stack on Sea 封面](/images/stack-on-sea-cover-20260318.png)
 
 它是一个给出海开发者使用的「技术栈选择 + AI Prompt 生成」工具，目标是让你在 5 分钟内完成技术选型，并直接把可执行 Prompt 丢给 Cursor / Claude 开工。
 
