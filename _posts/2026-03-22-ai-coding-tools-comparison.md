@@ -1,10 +1,9 @@
 ---
-
-## layout: default
-
+layout: default
 title: 2026 我个人的 AI 编码工具链分层选择
 no_duoshuo: false
 permalink: /ai-coding-tools-2026/
+---
 
 # 2026 我个人的 AI 编码工具链分层选择
 
